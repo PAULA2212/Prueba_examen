@@ -50,11 +50,13 @@ body {
     transition: transform 0.3s ease; /* Transición para la rotación de la flecha */
   }
   
-  .menu-item.expanded .arrow {
+  .menu-item.expanded .arrow, .submenu-item.expanded .arrow{
     transform: rotate(90deg);
   }
   /* Resto del código es el mismo */
-  
+  .sub-menu-item.expanded {
+    display: flex;
+  }
   .sub-menu {
     display: none;
     flex-direction: column; /* Muestra los submenús en columnas */
